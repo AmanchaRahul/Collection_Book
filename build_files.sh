@@ -1,11 +1,5 @@
-#!/bin/bash
 
-# Activate the virtual environment (if applicable)
-# source /path/to/your/venv/bin/activate
-
-# Collect static files
-echo "Collecting static files"
-python manage.py collectstatic --noinput
-
-# Set execution permissions for the script
-chmod +x build_files.sh
+echo " BUILD START"
+python3.9  -m pip install -r requirements.txt
+python3.9 manage.py collectstatic  --noinput --clear
+echo " BUILD END"

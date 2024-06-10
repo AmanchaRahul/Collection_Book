@@ -10,7 +10,7 @@
         "src": "build_files.sh",
         "use": "@vercel/static-build",
         "config": {
-          "distDir": "staticfiles"
+          "distDir": "staticfiles_build"
         }
       }
     ],
@@ -20,22 +20,8 @@
         "dest": "/static/$1"
       },
       {
-        "src": "/media/(.*)",
-        "dest": "media/$1"
-      },
-      {
         "src": "/(.*)",
         "dest": "project22/wsgi.py"
       }
-    ],
-    
-    "env": {
-      "CLOUDINARY_CLOUD_NAME": "djum0pvam",
-      "CLOUDINARY_API_KEY": "362675621235635",
-      "CLOUDINARY_API_SECRET": "-KxykuJCb8WAIokPgdjlm8E3GWs",
-      "DJANGO_SECRET_KEY": "django-insecure-!0jt%&=_3nfllpm)q!uxwmsen9r@mk3jmf*6#(j2$o$$3&xur8",
-      "DEBUG": "False"
-    }
+    ]
   }
-  
-  
